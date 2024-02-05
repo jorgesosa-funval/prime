@@ -1,16 +1,20 @@
 import React from 'react'
-import BasicDemo from './component/BasicDemo';
-import { Button } from 'primereact/button';
+
 import 'primeicons/primeicons.css';
-import SingleRowSelectionDemo from './component/Table';
+import Api from './context/Api';
+import Prueba from './component/Prueba';
+import Prueba2 from './component/Prueba2';
+
 
 function App() {
 
   return (
     <>
+      <Api>
+        <Prueba />
+        <Prueba2/>
+      </Api>
 
-      <BasicDemo />
-      <SingleRowSelectionDemo />
     </>
   )
 }
